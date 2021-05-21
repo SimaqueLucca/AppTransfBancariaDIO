@@ -1,0 +1,16 @@
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\bin\Debug\net5.0\TransfBancarias.exe
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\bin\Debug\net5.0\TransfBancarias.deps.json
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\bin\Debug\net5.0\TransfBancarias.runtimeconfig.json
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\bin\Debug\net5.0\TransfBancarias.runtimeconfig.dev.json
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\bin\Debug\net5.0\TransfBancarias.dll
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\bin\Debug\net5.0\ref\TransfBancarias.dll
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\bin\Debug\net5.0\TransfBancarias.pdb
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\TransfBancarias.csprojAssemblyReference.cache
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\TransfBancarias.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\TransfBancarias.AssemblyInfoInputs.cache
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\TransfBancarias.AssemblyInfo.cs
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\TransfBancarias.csproj.CoreCompileInputs.cache
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\TransfBancarias.dll
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\ref\TransfBancarias.dll
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\TransfBancarias.pdb
+C:\Users\Luca Simaque Souza\Desktop\TransfBancarias\obj\Debug\net5.0\TransfBancarias.genruntimeconfig.cache
