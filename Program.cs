@@ -15,19 +15,19 @@ namespace TransfBancarias
                 switch (opcaoUsuario)
                 {
                     case "1":
-                        //ListarContas();
+                        ListarContas();
                         break;
                     case "2":
                         InserirConta();
                         break;
                     case "3":
-                        //Transferir();
+                        Transferir();
                         break;
                     case "4":
-                        //Sacar();
+                        Sacar();
                         break;
                     case "5":
-                        //Depositar();
+                        Depositar();
                         break;
                     case "C":
                         Console.Clear();
@@ -36,6 +36,24 @@ namespace TransfBancarias
                         throw new ArgumentOutOfRangeException();
                 }
                 opcaoUsuario = ObterOpcaoUsuario();
+            }
+        }
+
+        private static void ListarContas()
+        {
+            int i = 0;
+            foreach (var item in listContas)
+            {
+
+                if (listContas.Count != 0)
+                {
+                    System.Console.WriteLine($"#{i} - " + item);
+                }
+                else
+                {
+                    System.Console.WriteLine("Nenhuma conta cadastrada");
+                }
+                i++;
             }
         }
 
@@ -50,12 +68,48 @@ namespace TransfBancarias
             System.Console.Write("Digite o saldo inicial: R$");
             double inSaldo = double.Parse(Console.ReadLine());
 
-            System.Console.WriteLine("Digite o crédito: R$");
+            System.Console.Write("Digite o crédito: R$");
             double inCredito = double.Parse(Console.ReadLine());
 
             Conta novaConta = new Conta(tipoConta: (TipoConta)inTipoConta, saldo: inSaldo, credito: inCredito, nome: inNome);
 
             listContas.Add(novaConta);
+        }
+
+        private static void Transferir()
+        {
+            System.Console.Write("Informe a conta de origem: ");
+            int contaOrigem = int.Parse(Console.ReadLine());
+
+            System.Console.Write("Informe a conta destino: ");
+            int contaDestino = int.Parse(Console.ReadLine());
+
+            System.Console.Write("Valor a ser transferido:");
+            double valorTransferencia = double.Parse(Console.ReadLine());
+
+            listContas[contaOrigem].Transferir(valorTransferencia, listContas[contaDestino]);
+        }
+
+        private static void Sacar()
+        {
+            System.Console.Write("Informe o numero da conta: ");
+            int numeroConta = int.Parse(Console.ReadLine());
+
+            System.Console.Write("Informe o valor que deseja sacar: ");
+            double valorSaque = double.Parse(Console.ReadLine());
+
+            listContas[numeroConta].Sacar(valorSaque: valorSaque);
+        }
+
+        private static void Depositar()
+        {
+            System.Console.Write("Informe o numero da conta: ");
+            int numeroConta = int.Parse(Console.ReadLine());
+
+            System.Console.Write("Insira o valor do deposito: ");
+            double valorDeposito = double.Parse(Console.ReadLine());
+
+            listContas[numeroConta].Depositar(valorDeposito: valorDeposito);
         }
 
         private static string ObterOpcaoUsuario()

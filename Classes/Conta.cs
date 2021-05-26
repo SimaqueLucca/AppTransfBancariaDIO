@@ -49,7 +49,7 @@ namespace TransfBancarias
         public override string ToString()
         {
             string retorno = "";
-            retorno += "TipoConta " + this.TipoConta + " | ";
+            retorno += "Tipo de Conta " + this.TipoConta + " | ";
             retorno += "Nome " + this.Nome + " | ";
             retorno += "Saldo " + this.Saldo + " | ";
             retorno += "Crédito " + this.Credito;
